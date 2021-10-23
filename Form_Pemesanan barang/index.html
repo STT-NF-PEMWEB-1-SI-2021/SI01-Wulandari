@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta chareset="utf-8" />
+    <title>Form | Pesanan Barang</title>
+  </head>
+
+  <body style="background-color: rgba(245, 245, 220, 0.863)">
+    <div>
+      <br />
+      <table rules="all" , border="1" style="width: 100%; background-color: burlywood">
+        <tr align="center">
+          <td><b>Home</b></td>
+          <td><b>General Link</b></td>
+          <td><b>Transaction Hostory</b></td>
+          <td><b>Policy</b></td>
+          <td><b>Logout</b></td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div>
+      <table>
+        <tr>
+          <td rowspan="20" width="90px">
+            <p><img src="samsung-galaxy-a52s-5g.jpg" width="300" height="200" style="display: block; margin-right: 40px; margin-top: 30px; border: 2px" /></p>
+            <form action="samsung-galaxy-a52s-5g.jpg" method="" enctype="multipart/form-data"><input type="submit" name="photo" value="Upload Picture" /></form>
+          </td>
+        </tr>
+        <tr>
+          <td>Title Here</td>
+          <td>:</td>
+          <td><label for="tittle"></label> <input type="text" name="title" /></td>
+        </tr>
+        <tr>
+          <td>Description</td>
+          <td>:</td>
+          <td><textarea name="desckription" cols="30" rows="6"></textarea></td>
+        </tr>
+        <tr>
+          <td>Account Number</td>
+          <td>:</td>
+          <td><label for="account number"></label><input type="text" name="Account number" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              Bank : <input type="text" list="banklevel" name="bank" />
+              <datalist id="banklevel">
+                <option value="BCA (Bank Central Asia)"></option>
+                <option value="Mandiri"></option>
+                <option value="BRI (Bank Rakyat Indonesia)"></option>
+                <option value="Chimb Niaga"></option>
+              </datalist>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>Accound Holder</td>
+          <td>:</td>
+          <td><label for="accound holder"></label><input type="text" name="account holder" /></td>
+        </tr>
+        <tr>
+          <td>Tansaction</td>
+          <td>:</td>
+          <td>
+            <label><input type="number" name="transaksi" min="1" max="5" /></label><br />*if transaction is for 3 person, choose 3 from the drop down-list<br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <form action="/action_page.php" style="color: rgb(29, 155, 4)">
+              <input type="checkbox" name="mobilephone" />
+              <label for="mobilephone">Sent to Mobile Phone</label><br />
+              <input type="checkbox" name="email" />
+              <label for="email">Sent to Email</label>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td>Send to Mobile Phone</td>
+          <td>:</td>
+          <td><label for="phone"></label><input type="text" name="sent to mp" /></td>
+        </tr>
+        <tr>
+          <td>Sent to Email</td>
+          <td>:</td>
+          <td><label for="email"></label><input type="text" name="email" /></td>
+        </tr>
+      </table>
+      <p align="center"><input type="submit" value="Generate Nobr Link" style="background-color: rgb(27, 185, 35); color: beige" /></p>
+    </div>
+  </body>
+</html>
