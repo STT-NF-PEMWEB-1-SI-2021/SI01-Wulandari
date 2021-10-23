@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Form | Ayam B'kar</title>
+  </head>
+
+  <body>
+    <h1>Ayam B'kar | Sambelan</h1>
+    <p>Ayam B'kar Sambelan sekarang tersedia untuk pemesanan online/delevery<br />pesan sekarang, dan tentukan keinginan anda, kami akan mengantar dengan cepat.</p>
+
+    <div>
+      <p>Informasi Anda :</p>
+      <form method="post" action="biodata.php">
+        <table>
+          <tr>
+            <td><label for="nama">Nama</label></td>
+            <td>:</td>
+            <td><input type="text" name="nama" id="nama" /></td>
+          </tr>
+          <tr>
+            <td><label for="alamat">Alamat</label></td>
+            <td>:</td>
+            <td><input type="text" name="alamat" id="alamat" /></td>
+          </tr>
+          <tr>
+            <td><label for="telp">Nomor Telphon</label></td>
+            <td>:</td>
+            <td><input type="text" name="telp" id="telp" /></td>
+          </tr>
+          <tr>
+            <td><label for="email">E-mail</label></td>
+            <td>:</td>
+            <td><input type="text" name="email" id="email" /></td>
+          </tr>
+        </table>
+      </form>
+
+      <p>Intruksi Pemesanan :</p>
+      <textarea name="text" cols="60" rows="6"></textarea>
+    </div>
+
+    <div>
+      <h3>Daftar Menu:</h3>
+      <p>Olahan Ayam</p>
+      <form action="form2.html">
+        <h3>pilihan (choose one) :</h3>
+        <input type="radio" value="ayam"/>
+        <label>Ayam bakar</label><br/>
+        <input type="radio" value="ayam"/>
+        <label>Ayam Bakar Gulai</label><br/>
+        <input type="radio" value="ayam"/>
+        <label>Ayam Asap</label><br/>
+        <input type="radio" value="ayam"/>
+        <label>Soto Ayam</label><br />
+
+        <h3>Toping Sambelan dan lainnya (Pilih Sesuai keinginan anda) :</h3>
+        <input type="checkbox" name="toping1" id="toping1" value="sambel mata" />
+        <label for="toping1">Sambel Matah</label><br />
+        <input type="checkbox" name="toping2" id="toping2" value="sambel terasi" />
+        <label for="toping2">Sambel Terasi</label><br />
+        <input type="checkbox" name="toping3" id="toping3" value="sambel jeletot" />
+        <label for="toping3">Sambel Jeletot</label><br />
+        <input type="checkbox" name="toping4" id="toping4" value="kentang" />
+        <label for="toping4">Kentang Goreng</label><br />
+        <input type="checkbox" name="toping5" id="toping5" value="nasi putih" />
+        <label for="toping5">Nasi Putih</label><br />
+        <input type="checkbox" name="toping6" id="toping6" value="nasi uduk" />
+        <label for="toping6">Nasi Uduk</label><br />
+        <input type="checkbox" name="toping7" id="toping7" value="Nasi Kuning" />
+        <label for="toping7">Nasi Kuning</label><br />
+
+        <p>
+          Nomor<br /><label>Berapa Banyak Pesanan</label> <input type="number" name="pesanan" min="1" max="6" />
+        </p>
+
+        <p><input type="submit" style="background-color: cadetblue; color: cornsilk;"/> <input type="reset" value="Reset" style="background-color: cadetblue; color: cornsilk;" /></p>
+      </form>
+    </div>
+  </body>
+</html>
