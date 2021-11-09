@@ -1,0 +1,54 @@
+body {
+  background-color: rgb(205, 252, 205);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  font-size: 200%;
+  font-weight: bold;
+  color: brown;
+  
+}
+#content{
+  display: flex;
+}
+
+
+section{
+  display: flex;
+}
+table{
+    width: 25%;
+    text-align: center;
+    margin-left: 5cm;
+}
+div{
+  width: 35%;
+  margin-left: 3cm;
+}
+
+
+footer{
+  background-color: rgb(94, 163, 91);
+  color: beige;
+  background-size: contain;
+  text-align: center;
+}
+
+.vid{
+  width: 9cm;
+  height: 7cm;
+}
+
+.gambar1{
+  width: 20px;
+  height: 20px;
+}
+
+.pdf1{
+ width: 25px;
+ height: 20px;
+}
+
+
