@@ -1,0 +1,55 @@
+<DOCTYPE html>
+    <html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <title>Praktikum 6.2</title>
+        <style>
+        #main{
+            margin: 0em;
+            padding: 0em;
+            width: 100%;
+            display: flex
+        }
+        nav{
+            background-color: palegreen;
+            width: 15%;
+            height: 600px;
+            margin: 0em;
+        }
+        header,footer{
+            background-color: peru;
+            width: 1150px;
+            height: 100px;
+            margin: 0em;
+        }
+        article{
+            flex: 1;
+            background-color: pink;
+            width: 80%;
+            height: 400px;
+        }
+        aside{
+            background-color: royalblue;
+            width: 20%;
+            height: 400px;
+        }
+        .main1{
+            display: flex;
+            width: 100%;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <nav>Nav</nav>
+            <div>
+               <header>Header</header>
+               <div class="main1">
+                  <article>Article</article>
+                  <aside>Aside</aside>
+                </div>
+               <footer>Footer</footer>
+            </div>
+        </div>
+    </body>
+    </html>
