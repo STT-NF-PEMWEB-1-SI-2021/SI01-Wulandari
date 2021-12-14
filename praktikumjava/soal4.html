@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Penjumlahan</title>
+    <style>
+        body{
+            background-color: rgb(216, 201, 216);
+        }
+    </style>
+    <script>
+        function hitung(){
+            let a = Number(document.getElementById("bil1").value);
+            let b = Number(document.getElementById("bil2").value);
+            let c = a + b;
+            document.getElementById("bil3").value=c;
+        }
+    </script>
+</head>
+<body>
+    <form id="frm">
+        <input type="text" id="bil1" value="" onchange="hitung()"/>
+        <br/>
+        <b>+</b><br/>
+        <input type="text" id="bil2" value="" onchange="hitung()"/>
+        <br/>
+        <b>=</b><br/>
+        <input type="text" value="0" id="bil3"/>
+    </form>
+
+</body>
+</html>

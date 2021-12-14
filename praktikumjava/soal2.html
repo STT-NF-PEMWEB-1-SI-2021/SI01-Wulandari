@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <style>
+        button{
+            background-color: aquamarine;
+        }
+        body{
+            background-color: rgb(224, 247, 247);
+        }
+    </style>
+    <title>KURS</title>
+    <script>
+        function hitung(){
+            const idr = 14650
+            let jadirup = document.getElementById("total").innerHTML=idr*(dollar.value);
+        }
+    </script>
+</head>
+<body>
+    <h3>Menghitung Kurs Dollar</h3>
+    <p>(1 USD = Rp 14.650)</p>
+    Dollar      : $ <input type="number" value="" id="dollar"><br/>
+    <button onclick="hitung()">total</button><br/>
+    NILAI RUPIAH    :  Rp <span id="total"></span>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Harga Parkir </title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+    </style>
+    <script>
+        function hitungparkir(){
+            let jam_masuk = document.getElementById("masuk").value;
+            let jam_keluar = document.getElementById("keluar").value;
+            let selisih_jam = jam_keluar - jam_masuk;
+            const TARIF_AWAL = 3000;
+            const TARIF_PERJAM = 1000;
+            if(selisih_jam <= 2){
+                biaya = TARIF_AWAL;
+            }else{
+                let tambahan_jam = selisih_jam;
+                biaya = TARIF_AWAL + (TARIF_PERJAM * tambahan_jam);
+            }
+            let area_biaya = document.getElementById("total");
+            area_biaya.innerHTML = biaya;
+        }
+    </script>
+</head>
+<body>
+    <h3>BIAYA PARKIR AREA</h3>
+    Motor:
+    <ul>
+        <li> Parkir dibawah / 2jam = Rp 3000</li>
+        <li> Parkir lebih dari 2jam = ditambah Rp 1000/jam</li>
+    </ul>
+    <p>Jam Masuk Kendaraan      : <input type="number" value="" id="masuk"></p>
+    <p>Jam Keluar Kendaraan     : <input type="number" value="" id="keluar"></p>
+    <button onclick="hitungparkir()">Harga parkir</button> : Rp <span id="total"></span>
+</body>
+</html>
