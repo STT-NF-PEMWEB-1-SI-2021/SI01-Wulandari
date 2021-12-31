@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Chat</title>
+    <style>
+        .tampilan{
+            box-sizing: border-box;
+            width: 45%;
+            height: 500px;
+            border: 2px black;
+            border-style: solid;
+            border-width: thin;
+            background-color: darkseagreen;
+        }
+    </style>
+    <script>
+       
+    </script>
+</head>
+<body>
+    <main>
+        <div class="tampilan">
+        </div><br>
+        <div>
+            <input type="text" class="pesan" size="73">
+            <button class="kirim">Kirim</button>
+        </div>
+    </main>
+    <script>
+       let tampilan_pesan = document.querySelector(".tampilan");
+        const masukkan_pesan = document.querySelector(".pesan");
+        const btnChat = document.querySelector(".kirim");
+
+        btnChat.addEventListener("click", function () {
+        tampilan_pesan.innerHTML = tampilan_pesan.innerHTML + "<br>" + masukkan_pesan.value;
+        masukkan_pesan.value ="";
+    })  
+    </script>
+</body>
+</html>

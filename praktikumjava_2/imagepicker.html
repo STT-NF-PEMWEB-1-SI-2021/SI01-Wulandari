@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <style>
+        .ukuran{
+            width: 30%;
+            height: 300px;
+            margin-left: 2px;
+            margin-top: 30px;
+        }
+    </style>
+   
+</head>
+<body>
+    <div class="hewan">
+       <select onchange="pilihan();" name="pilihgambar" id="gambar">
+        <option value="tidak" id="tidakada">Not Selected</option>
+        <option value="gorila" id="gorila">Gorila</option>
+        <option value="kupu-kupu" id="kupu">Kupu-Kupu</option>
+        <option value="buaya" id="buaya">Buaya</option>
+        <option value="kucing" id="kucing">Kucing</option>
+        <option value="kelinci" id="kelinci">Kelinci</option>
+        <option value="kuda" id="kuda">Kuda</option>
+        <option value="burung" id="burung">Burung</option>
+        </select> 
+    </div>
+    <div class="tampilan" id="tampilan"  onchange="pilihan()">
+    </div>
+     <script type="text/javascript">
+        function pilihan(){
+            var gambar = document.getElementById("gambar").value;
+           if(gambar == "gorila"){
+                gorila = document.getElementById("tampilan").innerHTML = '<img class="ukuran" src="img/gorila.jpg">'
+                window.alert("Ini gambar Gorila");
+            }else if(gambar == "kupu-kupu"){
+                kupu = document.getElementById("tampilan").innerHTML = '<img class="ukuran" src="img/kupu-kupu.jpg">' 
+                window.alert("Ini Gambar kupu-kupu");
+            }else if(gambar == "buaya"){
+                buaya = document.getElementById("tampilan").innerHTML = '<img class="ukuran" src="img/buaya.jpg">'
+                window.alert("Ini Gambar Buaya");
+            }else if(gambar == "kucing"){
+                kucing = document.getElementById("tampilan").innerHTML = '<img class="ukuran" src="img/kucing.jpg">'
+                window.alert("Ini Gambar kucing");
+            }else if(gambar == "kelinci"){
+                kelinci = document.getElementById("tampilan").innerHTML = '<img class="ukuran" src="img/kelinci.jpg">'
+                window.alert("Ini Gambar Kelinci");
+            }else if(gambar == "kuda"){
+                kuda = document.getElementById("tampilan").innerHTML = '<img class="ukuran" src="img/kuda.jpg">'
+                window.alert("Ini Gambar Kuda");
+            }else if(gambar == "burung"){
+                burung = document.getElementById("tampilan").innerHTML = '<img class="ukuran" src="img/burung.jpg">'
+                window.alert("Ini Gambar Kelinci");
+            }
+        }
+    </script>
+</body>
+</html>

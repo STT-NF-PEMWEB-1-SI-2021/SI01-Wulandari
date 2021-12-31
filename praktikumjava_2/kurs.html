@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Kurs Rupiah</title>
+        <style>
+            table{
+                border: 1px; 
+            }
+            .pilihan{
+                width: 20%;
+            }
+            td{
+                border: 1px;
+            }
+            fieldset{
+                width: 45%;
+            }
+        </style>
+        <script>
+            function hitung(){
+                let x = Number(document.getElementById("rupiah").value);
+                let y = Number(document.getElementById("Total").value);
+                let s = document.getElementById("pilihan").value;
+                let kosong = document.getElementById("pilih").value;
+                let us = document.getElementById("us").value;
+                let sing = document.getElementById("singapur").value;
+                let ringgit = document.getElementById("malay").value;
+                let yen = document.getElementById("jpg").value;
+                let eur = document.getElementById("euro").value;
+                let riyal = document.getElementById("arab").value;
+                if(s == kosong){
+                    hasil = 0;
+                    document.getElementById("Total").innerHTML ="Rp. " + hasil;
+                    console.log(hasil);
+                }else if(s == us){
+                    hasil = x * 9915;
+                    document.getElementById("Total").innerHTML ="Rp. " + hasil;
+                    console.log(hasil);
+                } else if(s == sing){
+                    hasil = x * 13472;
+                    document.getElementById("Total").innerHTML ="Rp. " + hasil;
+                    console.log(hasil);
+                }else if(s == ringgit){
+                    hasil = x * 874;
+                    document.getElementById("Total").innerHTML ="Rp. " + hasil;
+                    console.log(hasil);
+                }else if(s == yen){
+                    hasil = x * 120;
+                    document.getElementById("Total").innerHTML ="Rp. " + hasil;
+                    console.log(hasil);
+                }else if(s == eur){
+                    hasil = x * 15888;
+                    document.getElementById("Total").innerHTML ="Rp. " + hasil;
+                    console.log(hasil);
+                }else{
+                    hasil = x * 3592;
+                    document.getElementById("Total").innerHTML ="Rp. " + hasil;
+                    console.log(hasil);
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Kurs Rupiah - Mata Uang Asing</legend>
+            <table border="1">
+                <tr>
+                    <th>Masukkan Nilai</th>
+                    <th id="matauang">Valas</th>
+                    <th>Nilai Rupiah</th>
+                </tr>
+                <tr>
+                    <td><input type="text" value="" id="rupiah" onchange="hitung()"></td>
+                    <td>
+                        <select onchange="hitung();" name="pilihan" id="pilihan">
+                            <option value="pilih" id="pilih">No Result</option>
+                            <option value="Dollar US" id="us">Dollar US</option>
+                            <option value="Dollar Singapore" id="singapur">Dollar Singapore</option>
+                            <option value="Ringgit Malaysia" id="malay">Ringgit Malaysia</option>
+                            <option value="Yen Jepang" id="jpg">Yen Jepang</option>
+                            <option value="Euro" id="euro">Euro</option>
+                            <option value="Riyal Arab Saudi" id="arab">Riyal Arab Saudi</option>
+                        </select>
+                    </td>
+                    <td><div id="Total">Rp.</div></td>
+                </tr>
+            </table>
+        </fieldset>
+    </body>
+</html>
