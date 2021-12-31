@@ -97,29 +97,27 @@
         if(nama.value == "" || nama.value.length >= 30){
             span[0].style.visibility = "visible"
         }else{
-            console.log(nama);
-            
+            console.log(nama.value);
         }
         if(email.value == ""){
             span[1].style.visibility = "visible"
         }else{
-            console.log(email); 
+            console.log(email.value); 
         }
         if(jam.value == ""){
             span[2].style.visibility = "visible"
         }else{
-            console.log(jam);
-            
+            console.log(jam.value);
         }
         if(tujuan.value == ""){
             span[3].style.visibility = "visible"
         }else{
-            console.log(tujuan);  
+            console.log(tujuan.value);  
         }
         if(jumlah_tiket.value == ""){
             span[4].style.visibility = "visible"
         }else{
-            console.log(jumlah_tiket);
+            console.log(jumlah_tiket.value);
             document.getElementById("pertama").innerHTML = "Nama Pelanggan : " + nama.value;
             document.getElementById("kedua").innerHTML = "Email : " + email.value;
             document.getElementById("ketiga").innerHTML = "Jam : " + jam.value;
