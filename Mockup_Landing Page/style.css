@@ -1,0 +1,24 @@
+.testimoni {
+  background-color: rgb(245, 158, 158);
+  color: black;
+}
+#fitur1,
+#fitur2,
+#fitur3,
+#social {
+  background-color: rgb(245, 158, 158);
+  color: black;
+}
+#card {
+  width: 90%;
+}
+#kartu {
+  width: 10%;
+}
+body {
+  padding-top: 5rem;
+  background-color: rgb(198, 231, 236);
+}
+#pertama {
+  background-color: coral;
+}
